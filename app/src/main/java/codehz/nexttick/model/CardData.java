@@ -63,4 +63,16 @@ public class CardData extends BaseObservable {
         this.description = description;
         notifyPropertyChanged(BR.description);
     }
+
+    public static class VoidCard extends CardData {
+        @Override
+        public String getTitle() {
+            return "title";
+        }
+
+        @Override
+        public String getDescription() {
+            return "description";
+        }
+    }
 }
